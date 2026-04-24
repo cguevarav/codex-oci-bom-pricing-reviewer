@@ -31,7 +31,7 @@ The report always includes the absolute path of the annotated workbook.
 
 ## Install in Codex
 
-Go to Codex skills folder and clone the Skill repository:
+Step 1. Go to Codex skills folder and clone the skill repository:
 
 ```bash
 cd $CODEX_HOME/skills
@@ -40,14 +40,22 @@ git clone https://github.com/cguevarav/codex-oci-bom-pricing-reviewer
 
 ![Clone repository in terminal](images/01_install_clone.png)
 
+Step 2. Use Codex to confirm the cloned repository was installed as a Skill:
+
+
+![List installed custom skills](images/02_install_check_installed.png)
 
 Restart Codex after installation to pick up the new skill.
 
 ## Use in Codex
 
 1. Place the `.xlsx` workbook in your workspace.
-2. Ask Codex to review it, including the file path (for example:
-   "review OCI pricing in `/path/to/workbook.xlsx`").
+2. Ask Codex to use skill "OCI Bom Pricing Reviewer" to check BoM in attached .xlsx file
+
+3. The results should be similas as shown below:
+
+![Use skill in Codex chat](images/03_install_usage.png)
+
 3. Codex runs live validation against Oracle's OCI pricing API and returns:
    - In-chat findings with exact discrepancies
    - Annotated reviewed workbook path
