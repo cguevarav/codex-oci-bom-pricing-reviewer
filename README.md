@@ -56,9 +56,6 @@ Restart Codex after installation to pick up the new skill.
 
 ![Use skill in Codex chat](images/03_install_usage.png)
 
-3. Codex runs live validation against Oracle's OCI pricing API and returns:
-   - In-chat findings with exact discrepancies
-   - Annotated reviewed workbook path
 
 ## Requirements
 
